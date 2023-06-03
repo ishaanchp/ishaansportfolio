@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Ishaan - Developer Portfolio</title>
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 160px 0;
+      align-items: center;
+    }
+
+    .firstSection>div {
+      width: 33%;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+    }
+
+    .rightSection img {
+      width: 80%;
+    }
+
+    .name {
+      color: green;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul a:hover {
+      color: purple;
+    }
+
+    #element {
+      color: green;
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    main hr {
+      border: 0;
+      background-color: green;
+      height: 1px;
+      margin: 40px 30px;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+
+    .textGray {
+      color: gray;
+    }
+
+    .secondSection .box {
+      background-color: white;
+      width: 80vw;
+      height: 1.2px;
+      margin: 105px 0;
+      display: flex;
+    }
+
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+    }
+
+    .vertical-title-10th {
+      position: relative;
+      top: 43px;
+      left: -19px;
+    }
+
+    .highschoolimage {
+      width: 70px;
+      position: relative;
+      top: -60px;
+      left: -35px;
+    }
+
+    .class12image {
+      position: relative;
+      width: 100px;
+      bottom: 80px;
+      right: 50px;
+    }
+
+    .vertical-title-12th {
+      position: relative;
+      top: 16px;
+      right: 20px;
+    }
+
+    .collegeimage {
+      position: relative;
+      width: 91px;
+      top: -91px;
+      right: 44px;
+    }
+
+    .vertical-title-college {
+      position: relative;
+      bottom: -3px;
+      right: 18px;
+      width: 200px;
+    }
+
+    footer {
+      background-color: rgb(53, 53, 64);
+      /* height: 233px; */
+
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .instalogo {
+      position: relative;
+width: 46px;
+left: 46px;
+    }
+    .second a{
+      color: white;
+      text-decoration: none;
+    }
+    .ytlogo{
+      width: 30px;
+position: relative;
+left: 54px;
+    }
+    .gmaillogo{
+      width: 25px;
+position: relative;
+right: -3.35vw;
+    }
+    .footer > div{
+      width: 223px;
+    }
+    .rights{
+      text-align: center;
+      color: grey;
+      padding: 12px 0;
+
+    }
+    .leftSection .btn{
+      padding: 12px;
+      background-color: color(srgb 0 0 0.1286);
+color: white;
+border-radius: 6px;
+border: 2px solid white;
+font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <h3>Ishaan Chopra</h3>
+      </div>
+      <div class="right">
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="about.html">
+            <li>About</li>
+          </a>
+          <a href="services.html">
+            <li>Services</li>
+          </a>
+          <a href="projects.html">
+            <li>Projects</li>
+          </a>
+          <a href="contactus.html">
+            <li>Contact me</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="name">Ishaan</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span><br><br>
+        <div class="button">
+          <a href="Ishaan Chopra's Resume.pdf" download><button class="btn">Download Resume</button></a>
+          <a href="https://github.com/ishaanchp"><button class="btn">Github Profile</button></a>
+        </div>
+        <!-- <div>Web Developer</div> -->
+      </div>
+      <div class="rightSection">
+        <img src="web-developer.png" alt="" />
+      </div>
+    </section>
+    <hr />
+    <section class="secondSection">
+      <span class="textGray">What have I done</span>
+      <h1>Education</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="highschoolimage" src="highschool.png" alt="" />
+          <div class="vertical-title-10th">
+            DPS Kanpur, Class10th(2019)-94%
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="class12image" src="12thimage.png" alt="" />
+          <div class="vertical-title-12th">
+            DPS Kanpur, Class12th(2021)-96%
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="collegeimage" src="collegeimage.png" alt="" />
+          <div class="vertical-title-college">
+            NMIMS Mumbai(2021-2026) - B.Tech(CS)+MBA - 3.56CGPA
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="first">
+        <h3>Ishaan's Developer Portfolio</h3>
+      </div>
+      <div class="second">
+        <ul>
+          <h5>Social Media Handles</h5>
+          <li><a
+            href="https://www.instagram.com/ishaan_chopra/"><img src="instagram.png" alt="" class="instalogo"></a></li>
+          <li><a
+            href="https://www.youtube.com/@ishaanchopra1712/"><img src="youtube.png" alt="" class="ytlogo"></a></li>
+          <li><a
+            href="mailto:ishaanchopra.work@gmail.com"><img src="gmail.png" alt="" class="gmaillogo"></a></li>
+        </ul>
+      </div>
+      <div class="third">
+        
+      </div>
+      <div class="fourth">
+        <!-- <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul> -->
+      </div>
+    </div>
+    <div class="rights">
+      Copyright &#169 www.ishaansportfolio.in | All rights reserved
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Web Developer",
+        "Financial Advisor",
+        "Content Creator",
+        "Video Editor",
+      ],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Ishaan - Developer Portfolio</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 160px 0;
+            align-items: center;
+            height: 281px;
+        }
+
+        .firstSection>div {
+            width: 33%;
+        }
+
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+            color: purple;
+        }
+
+        #element {
+            color: purple;
+            width: 100%;
+        }
+
+        main hr {
+            border: 0;
+            background-color: green;
+            height: 1px;
+            margin: 40px 30px;
+        }
+
+        .textGray {
+            color: gray;
+        }
+
+        footer {
+            background-color: rgb(53, 53, 64);
+            height: 233px;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .instalogo {
+            position: relative;
+            width: 46px;
+            left: 46px;
+        }
+
+        .second a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .ytlogo {
+            width: 30px;
+            position: relative;
+            left: 54px;
+        }
+
+        .gmaillogo {
+            width: 25px;
+            position: relative;
+            right: -3.35vw;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+
+        }
+
+        .comingsoon {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h3>Ishaan Chopra</h3>
+            </div>
+            <div class="right">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="services.html">
+                        <li>Services</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li>Contact me</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="comingsoon">
+                <span id="element"></span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Ishaan's Developer Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <h5>Social Media Handles</h5>
+                    <li><a href="https://www.instagram.com/ishaan_chopra/"><img src="instagram.png" alt=""
+                                class="instalogo"></a></li>
+                    <li><a href="https://www.youtube.com/@ishaanchopra1712/"><img src="youtube.png" alt=""
+                                class="ytlogo"></a></li>
+                    <li><a href="mailto:ishaanchopra.work@gmail.com"><img src="gmail.png" alt="" class="gmaillogo"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="third">
+
+            </div>
+            <div class="fourth">
+                <!-- <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul> -->
+            </div>
+        </div>
+        <div class="rights">
+            Copyright &#169 www.ishaansportfolio.in | All rights reserved
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "This page is coming soon, hold tight!"
+            ],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
