@@ -216,7 +216,7 @@
       <section class="firstSection">
         <div>
           <h2>Contact Me:</h2><br>
-          <form name="submit-to-google-sheet">
+          <form name="submit-to-google-sheet" reset>
             <div class="form-group">
               <label for="name">Name:</label>
               <input
@@ -315,6 +315,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => alert("Thanks for providing us with the details, We'll get back to you shortly!"))
+            form.reset()
             .catch(error => console.error('Error!', error.message))
         })
       </script>
