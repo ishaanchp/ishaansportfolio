@@ -169,12 +169,17 @@
         padding-right: 30px;
       }
 
-      .form-group input[type="submit"] {
+      .submit{
         padding: 10px 20px;
         background-color: #4caf50;
         color: #fff;
         border: none;
         cursor: pointer;
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
       }
     </style>
   </head>
@@ -211,7 +216,7 @@
       <section class="firstSection">
         <div>
           <h2>Contact Me:</h2><br>
-          <form onsubmit="sendEmail()">
+          <form name="submit-to-google-sheet">
             <div class="form-group">
               <label for="name">Name:</label>
               <input
@@ -256,7 +261,7 @@
             </div>
 
             <div class="form-group">
-              <input type="submit" value="Submit">
+              <button type="submit" class="submit">Submit</button>
             </div>
           </form>
         </div>
@@ -302,5 +307,16 @@
         Copyright &#169; www.ishaansportfolio.in | All rights reserved
       </div>
     </footer>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwYdXvsTR7FTeqSpa8-UAEK4dqWkzv3dB4MgKihO5-wA1SjUjUuaA_mT6r5AJMCExaK/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for providing us with the details, We'll get back to you shortly!"))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   </body>
 </html>
